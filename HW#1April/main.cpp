@@ -7,6 +7,7 @@
 using namespace std;
 bool allSame(int, int);
 bool checkDivisibility(int, int);
+int sumRange(int, int);
 
 int main(){
 
@@ -14,6 +15,8 @@ int main(){
     cout << ans << endl;
     bool ans2 = checkDivisibility(2, 4);
     cout << ans2 << endl;
+    int ans3 = sumRange(6, 12);
+    cout << ans3 << endl;
     
     return 0;
 }
@@ -35,4 +38,22 @@ bool checkDivisibility(int a, int b){
         return false;
     }
     
+}
+
+int sumRange(int a , int b){
+    int smaller, bigger,tempSum = 0, difference;
+    if(a < b){
+        smaller = a;
+        bigger = b;
+        difference = b - a;
+    }
+    else{
+        smaller = b;
+        bigger = a;
+        difference = a - b;
+    }
+    for(int i = 0; i <= difference; i++){
+        tempSum = (smaller + i) + tempSum;
+    }
+    return tempSum;
 }
