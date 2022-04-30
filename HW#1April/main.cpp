@@ -9,6 +9,7 @@ bool allSame(int, int);
 bool checkDivisibility(int, int);
 int sumRange(int, int);
 int sumOfOddCubes(int, int);
+float calcFormula(int);
 
 int main(){
 
@@ -20,6 +21,8 @@ int main(){
     cout << ans3 << endl;
     int ans4 = sumOfOddCubes(7, 15);
     cout << ans4 << endl;
+    float ans5 = calcFormula(4);
+    cout << ans5 << endl;
     
     
     return 0;
@@ -85,5 +88,13 @@ int sumOfOddCubes(int a, int b){
                     smaller++;
                 }
         }
+    return tempSum;
+}
+
+float calcFormula(int a){
+    float tempSum = 0;
+    for(int i = 1; i <= a;i++){
+        tempSum = (1/pow(2,i)) + tempSum;
+    }
     return tempSum;
 }
