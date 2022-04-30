@@ -1,9 +1,11 @@
-
+//CSC 126 hw#1
+//I pledge this work to be my own Alan Mackiewicz
+/*
+ In this code I created the five functions listed in the assignment. Each function takes proper variable types associated with what was asked and each also returns correct results and prints them in the main after the functions are set to variables.
+ */
+ 
 #include <iostream>
-#include <iomanip>
 #include <cmath>
-#include <ctime>
-#include <string>
 using namespace std;
 bool allSame(int, int);
 bool checkDivisibility(int, int);
@@ -98,3 +100,13 @@ float calcFormula(int a){
     }
     return tempSum;
 }
+/*
+ OUTPUT:
+ 
+ 1
+ 1
+ 63
+ 7975
+ 0.9375
+ 
+ */
