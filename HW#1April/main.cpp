@@ -8,6 +8,7 @@ using namespace std;
 bool allSame(int, int);
 bool checkDivisibility(int, int);
 int sumRange(int, int);
+int sumOfOddCubes(int, int);
 
 int main(){
 
@@ -17,6 +18,9 @@ int main(){
     cout << ans2 << endl;
     int ans3 = sumRange(6, 12);
     cout << ans3 << endl;
+    int ans4 = sumOfOddCubes(7, 15);
+    cout << ans4 << endl;
+    
     
     return 0;
 }
@@ -55,5 +59,31 @@ int sumRange(int a , int b){
     for(int i = 0; i <= difference; i++){
         tempSum = (smaller + i) + tempSum;
     }
+    return tempSum;
+}
+
+int sumOfOddCubes(int a, int b){
+    int smaller, bigger,tempSum = 0, difference;
+    if(a < b){
+        smaller = a;
+        bigger = b;
+        difference = b - a;
+    }
+    
+    else{
+        smaller = b;
+        bigger = a;
+        difference = a - b;
+    }
+    
+        for(int i = 0; i <= difference; i++){
+            if(smaller % 2 == 1){
+                tempSum = pow((smaller),3) + tempSum;
+                smaller++;
+            }
+                else{
+                    smaller++;
+                }
+        }
     return tempSum;
 }
