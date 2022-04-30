@@ -1,14 +1,12 @@
-//
-//  main.cpp
-//  HW#1April
-//
-//  Created by Alan Mackiewicz on 4/30/22.
-//
 
 #include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <ctime>
+#include <string>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(){
+    
+    
     return 0;
 }
