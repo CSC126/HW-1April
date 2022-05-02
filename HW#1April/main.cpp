@@ -1,7 +1,7 @@
 //CSC 126 hw#1
 //We pledge this work to be our own Alan Mackiewicz and Maxim Voyevoda
 /*
- In this code I created the five functions listed in the assignment. Each function takes proper variable types associated with what was asked and each also returns correct results and prints them in the main after the functions are set to variables.
+ In this code we created the five functions listed in the assignment. Each function takes proper variable types associated with what was asked and each also returns correct results and prints them in the main after the functions are set to variables.
  */
  
 #include <iostream>
